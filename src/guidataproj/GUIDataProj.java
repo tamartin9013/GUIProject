@@ -11,12 +11,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author Gamer
- */
 public class GUIDataProj extends Application {
-    
+    public Member memberInfo;
+   
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = 
@@ -34,4 +31,6 @@ public class GUIDataProj extends Application {
         launch(args);
     }
     
+    public Member saveMember(String memberName, String memberEmail, int memberRegion, int memberJoinDate) {
+    }
 }

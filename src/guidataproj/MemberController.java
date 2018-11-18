@@ -12,10 +12,6 @@ import java.util.logging.Logger;
 import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Gamer
- */
 public class MemberController {
     
     Connection connection = null;
