@@ -15,7 +15,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guidataproj.FXMLDocumentController">
@@ -26,13 +25,12 @@
                <children>
                   <TableView layoutX="14.0" layoutY="74.0" prefHeight="285.0" prefWidth="545.0">
                     <columns>
-                      <TableColumn prefWidth="155.0" text="Name" />
-                      <TableColumn prefWidth="91.0" text="Region" />
-                        <TableColumn prefWidth="191.0" text="E-Mail" />
-                        <TableColumn minWidth="0.0" prefWidth="105.0" text="Join Date" />
+                      <TableColumn id="First" prefWidth="155.0" text="First Name" />
+                        <TableColumn id="Last" prefWidth="191.0" text="Last Name" />
+                        <TableColumn id="Email" prefWidth="91.0" text="Email" />
+                        <TableColumn id="Region" minWidth="0.0" prefWidth="105.0" text="Region" />
                     </columns>
                   </TableView>
-                  <ImageView fitHeight="64.0" fitWidth="116.0" layoutX="443.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
                   <MenuBar layoutX="14.0" layoutY="2.0">
                     <menus>
                       <Menu mnemonicParsing="false" text="File">
@@ -52,7 +50,7 @@
                       </Menu>
                     </menus>
                   </MenuBar>
-                  <ImageView fitHeight="64.0" fitWidth="116.0" layoutX="306.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button id="connectButton" layoutX="522.0" layoutY="2.0" mnemonicParsing="false" onAction="#connect" text="Connect" />
                </children>
         </AnchorPane>
       </content>
@@ -62,7 +60,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <AnchorPane layoutX="-7.0" layoutY="-8.0" minHeight="0.0" minWidth="0.0" prefHeight="385.0" prefWidth="615.0">
+                  <AnchorPane layoutY="-7.0" minHeight="0.0" minWidth="0.0" prefHeight="385.0" prefWidth="615.0">
                      <children>
                         <DatePicker id="joinDateField" layoutX="399.0" layoutY="136.0" />
                         <Button id="addMemberBox" layoutX="460.0" layoutY="335.0" mnemonicParsing="false" text="Add New Member" />
